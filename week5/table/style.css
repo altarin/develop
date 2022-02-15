@@ -1,0 +1,77 @@
+h3 {
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #e1e1e1;
+}
+
+article {
+    background-color: #feebba;
+}
+
+header {
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+
+}
+
+.container {
+    display: flex;
+    height: 500px;
+}
+
+.main {
+    border: 1px solid black;
+    width: 65%;
+
+    background-color: #fff8e4;
+}
+
+.all_post {}
+
+.one_two {
+    display: flex;
+    justify-content: space-around;
+}
+
+.one_post,
+.two_post {
+    width: 40%;
+    height: 70px;
+}
+
+main .three_post {
+
+    height: 70px;
+
+    justify-content: center;
+}
+
+aside {
+    border: 1px solid black;
+    width: 35%;
+
+    background-color: #deedcc;
+}
+
+footer {
+    border: 1px solid black;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+section {
+    border: 1px solid black;
+    width: 200px;
+    height: 140px;
+    background-color: #f8f8f8;
+
+
+}
