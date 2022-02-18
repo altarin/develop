@@ -3,9 +3,13 @@ header {
     background: url(../konstruct/images/bg.jpg) center no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
     position: absolute;
     width: 100vw;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    color: #FFFFFF;
 }
 
 @font-face {
@@ -30,6 +34,21 @@ header {
 
 h1 {
     font-family: 'Bebas Neue Bold';
-    color: #FFFFFF;
     font-size: 60px;
+    margin-bottom: 0px;
+    letter-spacing: 3.7px;
+}
+
+header p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 19px;
+    margin-top: 0;
+}
+
+.scrol {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 3.7px;
+    margin-bottom: 60px;
 }
