@@ -1,0 +1,35 @@
+header {
+    height: 769px;
+    background: url(../konstruct/images/bg.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Bold';
+    src: url('../konstruct/fonts/bebas_neue_bold.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../konstruct/fonts/bebas_neue_bold.eot') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../konstruct/fonts/bebas_neue_bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../konstruct/fonts/bebas_neue_bold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../konstruct/fonts/bebas_neue_bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../konstruct/fonts/bebas_neue_bold.svg') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+.logo {
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: 'Bebas Neue Bold';
+    color: #FFFFFF;
+    font-size: 60px;
+}
