@@ -1,3 +1,7 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     height: 769px;
     background: url(../konstruct/images/bg.jpg) center no-repeat;
@@ -7,7 +11,6 @@ header {
     text-align: center;
     flex-direction: column;
     justify-content: space-between;
-    width: 100vw;
     color: #FFFFFF;
 }
 
@@ -31,7 +34,7 @@ header {
     margin-top: 40px;
 }
 
-h1 {
+.title h1 {
     font-family: 'Bebas Neue Bold';
     font-size: 60px;
     margin-bottom: 0px;
@@ -39,13 +42,11 @@ h1 {
 }
 
 header p {
-    font-family: 'Open Sans', sans-serif;
     line-height: 19px;
     margin-top: 0;
 }
 
 .scrol {
-    font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 3.7px;
@@ -55,7 +56,6 @@ header p {
 /* Меню */
 
 nav {
-    border: 1px solid black;
     height: 65px;
     display: flex;
     justify-content: space-around;
@@ -65,24 +65,23 @@ nav {
 
 .menu {
     display: flex;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    letter-spacing: 1.09091px;
 }
 
-.menu ul:nth-child(2) {
+.menu a:nth-child(2) {
     color: #00A4E5;
 }
 
-.menu ul {
+.menu a {
     padding-right: 48px;
-    padding-right: 0;
+    font-size: 12px;
+    color: #48555B;
+    letter-spacing: 1.09091px;
+    text-decoration: none;
 }
 
 /* Блок 1 - Our story */
 
 .story {
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     width: 941px;
@@ -90,12 +89,10 @@ nav {
     color: #48555B;
     margin: 57px auto 117px;
     justify-content: space-between;
-    font-family: 'Open Sans', sans-serif;
 }
 
-.story h1 {
+.story h2 {
     margin-top: 0;
-    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
@@ -117,7 +114,7 @@ nav {
     padding-left: 17px;
 }
 
-.content h2 {
+.content h3 {
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.1875px;
@@ -129,14 +126,13 @@ nav {
 
 .content {
     width: 455px;
+    height: 280px;
     letter-spacing: 0.1875px;
-
 }
 
 /* Блок2 - Our capabilities */
 
 .capabilities {
-    border: 1px solid black;
     color: #48555B;
     width: 940px;
     height: 446px;
@@ -153,8 +149,7 @@ nav {
 
 }
 
-.nav_block2 h1 {
-    font-family: 'Open Sans', sans-serif;
+.nav_block2 h2 {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 2.30625px;
@@ -162,14 +157,12 @@ nav {
 }
 
 .nav_block2 p {
-    font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     line-height: 19px;
     letter-spacing: 0.2px;
     min-width: 406px;
     margin-top: 0;
     margin-left: 90px;
-
 }
 
 .nav_block2 .button {
@@ -177,7 +170,6 @@ nav {
     height: 40px;
     background: #00A4E5;
     color: #FFFFFF;
-    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.5px;
@@ -202,9 +194,7 @@ nav {
 .three {
     padding-top: 38px;
     padding-left: 23px;
-    font-family: 'Open Sans', sans-serif;
 }
-
 
 .one,
 .two,
@@ -213,4 +203,23 @@ p {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.426667px;
+}
+
+.build {
+    height: 499px;
+    background: url(../konstruct/images/get-in-touch.png) center no-repeat;
+    background-size: cover;
+}
+
+.news {
+    height: 100px;
+    background: url(../konstruct/images/newsletter.png) center no-repeat;
+    background-size: cover;
+}
+
+/* футер */
+.footer {
+    height: 299px;
+    background: url(../konstruct/images/footer.png) center no-repeat;
+    background-size: cover;
 }
