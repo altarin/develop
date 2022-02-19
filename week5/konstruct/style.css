@@ -3,7 +3,6 @@ header {
     background: url(../konstruct/images/bg.jpg) center no-repeat;
     background-size: cover;
     display: flex;
-    position: absolute;
     width: 100vw;
     text-align: center;
     flex-direction: column;
@@ -51,4 +50,90 @@ header p {
     line-height: 13px;
     letter-spacing: 3.7px;
     margin-bottom: 60px;
+}
+
+/* Меню */
+
+nav {
+    border: 1px solid black;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #48555B;
+}
+
+.menu {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.09091px;
+}
+
+.menu ul:nth-child(2) {
+    color: #00A4E5;
+}
+
+.menu ul {
+    padding-right: 48px;
+    padding-right: 0;
+}
+
+/* Блок 1 - Our story */
+
+main {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 941px;
+    height: 344px;
+    color: #48555B;
+    margin: 57px auto 117px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+main h1 {
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 2.30625px;
+}
+
+main object {
+    text-align: center;
+}
+
+.block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.poster object:nth-child(2) {
+    padding-right: 17px;
+    padding-left: 17px;
+}
+
+.content .content h2 {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+}
+
+.content span {
+    color: #00A4E5;
+}
+
+.content {
+    width: 455px;
+    letter-spacing: 0.1875px;
+}
+
+.block2 {
+    border: 1px solid black;
+    width: 940px;
+    height: 446px;
 }
