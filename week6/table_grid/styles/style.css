@@ -1,0 +1,10 @@
+h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+}
+
+header,
+footer {
+    background-color: #e1e1e1;
+}
