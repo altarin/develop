@@ -91,3 +91,23 @@ h1 {
     line-height: 27px;
     text-align: center;
 }
+
+/* appartmens - 2й блок */
+
+.appartmens {
+    height: 806px;
+    background: #242B33;
+    display: grid;
+    grid-template-columns: repeat(2, 540px);
+    grid-template-rows: 106px 320px 320px;
+    justify-content: center;
+    gap: 30px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #D4C17F;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+}
