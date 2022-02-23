@@ -27,23 +27,28 @@ h3 {
 .main {
     background-color: #fff8e4;
     display: grid;
-    align-content: space-around;
+    justify-items: center;
 }
 
-.all_post {
-    display: grid;
-    gap: 3rem;
+.one_post {
+    grid-area: op;
 }
 
-.one_two_post {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    justify-content: space-evenly;
+.two_post {
+    grid-area: tp;
 }
 
 .three_post {
-    margin: 0 auto;
-    width: 87%;
+    grid-area: trp;
+}
+
+.all_post {
+    width: 90%;
+    display: grid;
+    gap: 3rem;
+    align-content: center;
+    grid-template-areas: "op tp"
+        "trp trp";
 }
 
 article,
