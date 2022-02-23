@@ -72,3 +72,22 @@ h1 {
     grid-template-columns: 37px 1fr;
     align-items: center;
 }
+
+/* testimonials - 1й блок  */
+
+.testimonials {
+    height: 420px;
+    background: #242B33;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 120px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+}
