@@ -1,3 +1,9 @@
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* header + nav */
+
 header {
     background: url(../assets/images/Rectangle.jpg) center no-repeat;
     background-size: cover;
@@ -5,16 +11,64 @@ header {
 }
 
 nav {
+    height: 126px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
     align-items: center;
 }
 
+.logo_nav {
+    display: grid;
+    justify-items: center;
+}
+
 .menu a {
+    font-family: 'Raleway', sans-serif;
     color: #fff;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
     padding-right: 40px;
+    text-decoration: none;
+}
+
+.title_mouse {
+    display: grid;
+    justify-items: center;
+}
+
+.title {
+    max-width: 556px;
+}
+
+h1 {
+    padding-top: 138px;
+    font-family: 'Playfair Display', serif;
+    color: #D4C17F;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+}
+
+.mouse {
+    padding-top: 50px;
+}
+
+.contact {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    max-width: 570px;
+    margin: 180px auto 0 auto;
+}
+
+.adress,
+.phone {
+    display: grid;
+    grid-template-columns: 37px 1fr;
+    align-items: center;
 }
