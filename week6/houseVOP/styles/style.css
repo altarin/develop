@@ -116,3 +116,28 @@ h2 {
 .appartmens h2 {
     grid-area: titl;
 }
+
+/* want - 3й блок */
+
+.want {
+    height: 560px;
+    background: url(../assets/images/want_to_see.png) center no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 540px);
+    grid-template-rows: 40px 135px;
+    justify-content: center;
+    gap: 30px;
+    grid-template-areas: "titl titl";
+    align-items: center;
+    align-content: center;
+}
+
+.want p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.want h2 {
+    grid-area: titl;
+}
