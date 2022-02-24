@@ -102,6 +102,7 @@ h1 {
     grid-template-rows: 106px 320px 320px;
     justify-content: center;
     gap: 30px;
+    grid-template-areas: "titl titl";
 }
 
 h2 {
@@ -110,4 +111,8 @@ h2 {
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
+}
+
+.appartmens h2 {
+    grid-area: titl;
 }
