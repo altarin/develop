@@ -141,3 +141,10 @@ h2 {
 .want h2 {
     grid-area: titl;
 }
+
+/* video */
+
+.video {
+    height: 830px;
+    background: #242B33;
+}
