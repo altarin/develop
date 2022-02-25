@@ -142,7 +142,7 @@ h2 {
     grid-area: titl;
 }
 
-/* video */
+/* video - 4й блок*/
 
 .video {
     height: 830px;
@@ -157,4 +157,22 @@ h2 {
 
 .arrow {
     position: absolute;
+}
+
+/* Maps - 5й блок */
+
+.maps {
+    background: #242B33;
+    height: 494px;
+    display: grid;
+    align-content: space-between;
+}
+
+.maps h2 {
+    grid-column: 2/3;
+    margin-top: 0;
+}
+
+.maps img {
+    grid-column: 2/3;
 }
