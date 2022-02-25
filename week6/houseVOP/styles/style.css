@@ -148,3 +148,13 @@ h2 {
     height: 830px;
     background: #242B33;
 }
+
+.overview {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.arrow {
+    position: absolute;
+}
