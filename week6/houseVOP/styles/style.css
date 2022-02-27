@@ -117,6 +117,12 @@ h2 {
     grid-area: titl;
 }
 
+.im p {
+    margin-left: 50px;
+    margin-top: -70px;
+    font-size: 24px;
+}
+
 /* want - 3й блок */
 
 .want {
