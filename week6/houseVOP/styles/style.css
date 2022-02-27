@@ -124,23 +124,53 @@ h2 {
     background: url(../assets/images/want_to_see.png) center no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(2, 540px);
-    grid-template-rows: 40px 135px;
+    grid-template-columns: 535px 255px 255px;
+    grid-template-rows: repeat(3, 50px);
     justify-content: center;
-    gap: 30px;
-    grid-template-areas: "titl titl";
-    align-items: center;
     align-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-.want p {
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
+.want .lorem {
+    color: #E7E7E7;
+    font-size: 16px;
+    line-height: 24px;
+    grid-row: 2/4;
 }
 
-.want h2 {
-    grid-area: titl;
+.want .form_name {
+    grid-row: 2/3;
 }
+
+.want .data {
+    grid-row: 3/4;
+}
+
+.want .form_phone {
+    grid-row: 2/3;
+}
+
+.want .form_district {
+    grid-row: 3/4;
+}
+
+.but_name,
+.but_phone,
+.but_district {
+    opacity: 0.6;
+}
+
+.want .but_district {
+    background: #D4C17F;
+    opacity: inherit;
+    margin-top: 16px;
+}
+
+.want .data {
+    font-size: 13px;
+}
+
 
 /* video - 4й блок*/
 
@@ -204,11 +234,11 @@ h2 {
     background-color: #4f545c;
     color: #fff;
     border: none;
-
 }
 
 .questions .but_district {
     background: #D4C17F;
+    opacity: inherit;
 }
 
 .questions h2 {
@@ -216,17 +246,17 @@ h2 {
     margin-top: 0;
 }
 
-.form_name {
+.questions .form_name {
     grid-column: 3/4;
     margin-left: 30px;
 }
 
-.form_phone {
+.questions .form_phone {
     grid-column: 4/5;
     margin-left: 30px;
 }
 
-.form_dis {
+.questions .form_district {
     grid-column: 5/6;
     margin-left: 30px;
 }
