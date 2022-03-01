@@ -1,0 +1,91 @@
+.grid_t {
+    display: grid;
+    grid-template-rows: 13% 1fr 20%;
+    height: 100vh;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* header */
+
+.header {
+    background-color: #e1e1e1;
+}
+
+/* Основной блок */
+
+.container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.main {
+    background-color: #fff8e4;
+    display: grid;
+    justify-items: center;
+}
+
+.one_post {
+    grid-area: op;
+}
+
+.two_post {
+    grid-area: tp;
+}
+
+.three_post {
+    grid-area: trp;
+}
+
+.all_post {
+    width: 90%;
+    display: grid;
+    grid-template-rows: 30% 30%;
+    gap: 2rem;
+    align-content: center;
+    grid-template-areas: "op tp"
+        "trp trp";
+}
+
+article,
+.three_post {
+    background-color: #feebba;
+}
+
+.aside {
+    background-color: #deedcc;
+}
+
+/* footer */
+
+.footer {
+    background-color: #e1e1e1;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: 20% 60% 20%;
+    justify-content: space-evenly;
+}
+
+section {
+    background-color: #fff;
+}
+
+.s1 {
+    grid-row: 2/3;
+}
+
+.s2 {
+    grid-row: 2/3;
+}
+
+.s3 {
+    grid-row: 2/3;
+}
+
+.s4 {
+    grid-row: 2/3;
+}
