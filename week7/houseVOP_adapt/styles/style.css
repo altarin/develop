@@ -110,6 +110,7 @@ h2 {
     color: #D4C17F;
     font-weight: bold;
     font-size: 36px;
+    font-size: 3vh;
     line-height: 48px;
 }
 
@@ -430,4 +431,120 @@ p {
         gap: 3rem;
     }
 
+}
+
+
+
+@media (min-width: 650px) and (max-width: 949px) {
+
+    nav {
+        grid-template-columns: 1fr;
+    }
+
+    nav .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .menu a:last-child {
+        padding-right: 0;
+    }
+
+    header .contact {
+        justify-items: center;
+    }
+
+    /* testimonials */
+    .testimonials {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(4, 100px);
+    }
+
+    .testimonials .park_p {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .testimonials .house_p {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+
+    /* appartmens */
+
+    .appartmens {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* want  */
+
+    .want {
+        display: flex;
+        flex-direction: column;
+        padding: 7%;
+        gap: 20px;
+    }
+
+    .want .but_district {
+        margin-top: 0;
+    }
+
+    /* video */
+
+    .video {
+        padding: 10%;
+        height: 100%;
+    }
+
+    .video .overview img {
+        width: 80%;
+    }
+
+    /* maps */
+
+    .maps {
+        height: 100%;
+        justify-items: center;
+    }
+
+    .maps .pict {
+        width: 80%;
+    }
+
+    /* questions */
+
+    .questions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .questions .form_name {
+        margin-left: 0;
+    }
+
+    .questions .form_phone {
+        margin-left: 0;
+    }
+
+    .questions .form_district {
+        margin-left: 0;
+    }
+
+    /* footer */
+
+    footer .menu_f {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
