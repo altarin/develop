@@ -43,7 +43,7 @@ h1 {
     color: #D4C17F;
     font-style: normal;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 3em;
     line-height: 64px;
     text-align: center;
 }
@@ -88,6 +88,10 @@ h1 {
     text-align: center;
 }
 
+.testimonials img {
+    max-width: 100%;
+}
+
 /* appartmens - 2й блок */
 
 .appartmens {
@@ -105,7 +109,7 @@ h2 {
     font-family: 'Playfair Display', serif;
     color: #D4C17F;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2em;
     line-height: 48px;
 }
 
@@ -118,6 +122,10 @@ h2 {
     margin-left: 50px;
     margin-top: -70px;
     font-size: 24px;
+}
+
+.appartmens .scale {
+    max-width: 100%;
 }
 
 /* want - 3й блок */
@@ -192,6 +200,10 @@ h2 {
     position: absolute;
 }
 
+.vid {
+    max-width: 100%;
+}
+
 /* Maps - 5й блок */
 
 .maps {
@@ -208,6 +220,10 @@ h2 {
 
 .maps img {
     grid-column: 2/3;
+}
+
+.maps .pict {
+    max-width: 100%;
 }
 
 
@@ -379,10 +395,6 @@ p {
         height: 100%;
     }
 
-    .maps .pict {
-        width: 100%;
-    }
-
     /* questions */
 
     .questions {
@@ -498,19 +510,12 @@ p {
         height: 100%;
     }
 
-    .video .overview img {
-        width: 80%;
-    }
-
     /* maps */
 
     .maps {
+        padding: 10% 10% 0;
         height: 100%;
         justify-items: center;
-    }
-
-    .maps .pict {
-        width: 80%;
     }
 
     /* questions */
@@ -581,10 +586,6 @@ p {
         justify-items: center;
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
     /* testimonials */
 
     .testimonials {
@@ -613,10 +614,6 @@ p {
         height: 100%;
         padding-left: 10%;
         padding-right: 10%;
-    }
-
-    .appartmens .scale {
-        width: 100%;
     }
 
     .appartmens .im p {
@@ -656,20 +653,12 @@ p {
         padding: 10%;
     }
 
-    .video .vid {
-        width: 100%;
-    }
-
     /* maps */
 
     .maps {
         padding: 10% 10% 0;
         text-align: center;
         height: 100%;
-    }
-
-    .maps .pict {
-        width: 100%;
     }
 
     /* questions */
