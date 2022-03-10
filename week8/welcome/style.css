@@ -1,0 +1,55 @@
+.container {
+    max-width: 100%;
+}
+
+.cont_wid {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+header .collapse {
+    justify-content: flex-end;
+}
+
+header {
+    padding-bottom: 2em;
+}
+
+header .navbar {
+    border-radius: 20px 20px 0 0;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.content .card {
+    height: 100%;
+}
+
+.content .list-group-item {
+    border-radius: 0;
+    text-align: center;
+    background: #F2F2F2;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.colcard {
+    margin-bottom: 2em;
+}
+
+footer .navbar {
+    color: #fff;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+}
+
+footer p {
+    padding-top: 2.5em;
+}

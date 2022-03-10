@@ -7,21 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-        footer .navbar {
-            color: #fff;
-            justify-content: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <title>Welcome</title>
 </head>
 
 <body>
     <div class="container">
-        <nav>
+        <header>
             <div class="row">
                 <div class="col">
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark cont_wid">
                         <div>
                             <a class="navbar-brand" href="#">Start Bootstrap</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -42,19 +37,18 @@
                     </nav>
                 </div>
             </div>
-        </nav>
-        <div class="banner">
+        </header>
+        <div class="banner cont_wid">
             <div class="row">
                 <div class="col">
                     <div class="jumbotron warm">
-                        <h1 class="display-4">A Warm Welcome</h1>
+                        <h1 class="display-4">A Warm Welcome!</h1>
                         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsa, ipsam, eligendi,
                             in
                             quo
                             sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur
                             vitae
                             fugiat numquam repellat.</p>
-
                         <p class="lead">
                             <a class="btn btn-primary btn-lg" href="#" role="button">Call to action!</a>
                         </p>
@@ -62,54 +56,72 @@
                 </div>
             </div>
         </div>
-        <div class="content">
+        <div class="content cont_wid">
             <div class="row">
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
+
+                <div class="colcard col-xl-3 col-md-6 col-sm-6">
+                    <div class="card">
                         <img src="image.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse
                                 necessitatibus neque.</p>
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="image.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo
-                                magni
-                                sapiente, tempore debitis beatae culpa natus architecto.</p>
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="image.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse
-                                necessitatibus neque.</p>
-                            <a href="#" class="btn btn-primary">Find Out More!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 15rem;">
-                        <img src="image.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo
-                                magni
-                                sapiente, tempore debitis beatae culpa natus architecto.</p>
-                            <div class="modal-footer">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary">
                                 <a href="#" class="btn btn-primary">Find Out More!</a>
-                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="colcard col-xl-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo
+                                magni
+                                sapiente, tempore debitis beatae culpa natus architecto.</p>
                         </div>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary">
+                                <a href="#" class="btn btn-primary">Find Out More!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="colcard col-xl-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapiente esse
+                                necessitatibus neque.</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary">
+                                <a href="#" class="btn btn-primary">Find Out More!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="colcard col-xl-3 col-md-6 col-sm-6">
+                    <div class="card">
+                        <img src="image.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explicabo
+                                magni
+                                sapiente, tempore debitis beatae culpa natus architecto.</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-secondary">
+                                <a href="#" class="btn btn-primary">Find Out More!</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -125,7 +137,7 @@
             </div>
         </footer>
     </div>
-    </div>
+
 
 
 
