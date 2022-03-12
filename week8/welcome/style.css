@@ -27,17 +27,13 @@ h5 {
     text-align: center;
 }
 
-.content .card {
-    height: 100%;
+.card-footer {
+    display: flex;
+    justify-content: center;
 }
 
-.content .list-group-item {
-    border-radius: 0;
-    text-align: center;
-    background: #F2F2F2;
-    border-right: none;
-    border-bottom: none;
-    border-left: none;
+.content .card {
+    height: 100%;
 }
 
 .colcard {
