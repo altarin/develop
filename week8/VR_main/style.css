@@ -12,25 +12,23 @@
     max-width: 100%;
 }
 
-header {
-    border-bottom: 1px solid lightgrey;
-}
-
 h1,
 h3 {
     font-family: Intro, 'Comic Sans MS', cursive;
 }
 
-.content h1 {
-    font-weight: 600;
-    font-size: 3em;
-}
+/* header */
 
 header .row {
     height: 40px;
     align-items: center;
 }
 
+header {
+    border-bottom: 1px solid lightgrey;
+}
+
+/* logo */
 .logo {
     margin-top: 50px;
     padding-left: 6%;
@@ -57,59 +55,84 @@ header .row {
     align-items: baseline;
 }
 
+/* content */
+.content h1 {
+    font-weight: 600;
+    font-size: 3em;
+}
+
 .content {
     padding-left: 8%;
     padding-right: 8%;
 }
 
-.content .jumbotron {
+.content .jum {
     background-color: #fff;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-top: 10px;
-}
-
-.content .jumbotron .lead_text {
-    font-family: Roboto_Slab, 'Comic Sans MS', cursive;
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.content .jumbotron .card {
-    background: #5222D0;
-    border-radius: 100px;
-    font-family: Intro, 'Comic Sans MS', cursive;
-    border: 0;
-    font-size: 35px;
-    height: 84px;
-    width: 270px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    margin-top: 30px;
+    padding: 80px;
+    padding-left: 0;
+    padding-bottom: 15px;
 }
 
 .content .row img {
-    margin-left: 10px;
     max-width: 100%;
-}
-
-nav a {
-    color: black;
-    font-size: 19px;
-    font-family: Roboto_Slab, 'Comic Sans MS', cursive;
-
-}
-
-nav .nav-link {
-    padding: 0.5em;
 }
 
 .content .card {
     height: 100%;
+    border: none;
 }
 
-.card h5 {
-    font-weight: 600px;
+.card .card-body {
+    padding: 1.25rem 0;
+}
+
+.card .card-body .title-weight {
+    font-family: Intro, 'Comic Sans MS', cursive;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.card .card-body .text-font {
+    font-family: Roboto_Slab, 'Comic Sans MS', cursive;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.content .caption {
+    background: #5222D0;
+    border-radius: 100px;
+    font-family: Intro, 'Comic Sans MS', cursive;
+    border: 0;
+    align-items: baseline;
+    margin-top: 23px;
+}
+
+.content .form {
+    background: #EC615B;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content .form h5 {
+    color: #fff;
+}
+
+.content .form .form-group {
+    font-family: Roboto_Slab, 'Comic Sans MS', cursive;
+}
+
+/* nav */
+nav a {
+    color: black;
+    font-size: 19px;
+    font-family: Roboto_Slab, 'Comic Sans MS', cursive;
+}
+
+nav .nav-link {
+    padding: 0.8em;
+}
+
+nav {
+    margin-top: 86px;
+    margin-bottom: 80px;
 }
