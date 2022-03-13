@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Intro;
+    src: url(assets/fonts/Intro.ttf);
+}
+
+@font-face {
+    font-family: Roboto_Slab;
+    src: url(assets/fonts/Roboto_Slab.ttf);
+}
+
+.container {
+    max-width: 100%;
+}
+
+header {
+    border-bottom: 1px solid lightgrey;
+}
+
+h1,
+h3 {
+    font-family: Intro, 'Comic Sans MS', cursive;
+}
+
+.content h1 {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+header .row {
+    height: 40px;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 50px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.logo .row {
+    align-items: center;
+}
+
+.logo h3 {
+    font-weight: 600;
+}
+
+.logo .col-logo {
+    display: flex;
+}
+
+.logo .basket {
+    background: #5222D0;
+    border-radius: 100px;
+    font-family: Intro, 'Comic Sans MS', cursive;
+    border: 0;
+    align-items: baseline;
+}
+
+.content {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.content .jumbotron {
+    background-color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 10px;
+}
+
+.content .jumbotron .lead_text {
+    font-family: Roboto_Slab, 'Comic Sans MS', cursive;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.content .jumbotron .card {
+    background: #5222D0;
+    border-radius: 100px;
+    font-family: Intro, 'Comic Sans MS', cursive;
+    border: 0;
+    font-size: 35px;
+    height: 84px;
+    width: 270px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.content .row img {
+    margin-left: 10px;
+    max-width: 100%;
+}
+
+nav a {
+    color: black;
+    font-size: 19px;
+    font-family: Roboto_Slab, 'Comic Sans MS', cursive;
+
+}
+
+nav .nav-link {
+    padding: 0.5em;
+}
+
+.content .card {
+    height: 100%;
+}
+
+.card h5 {
+    font-weight: 600px;
+}
