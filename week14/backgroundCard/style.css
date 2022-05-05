@@ -1,0 +1,12 @@
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+.content{
+    display: flex;
+    gap:20px;
+}
+.opted{
+    background-color: orchid;
+}
