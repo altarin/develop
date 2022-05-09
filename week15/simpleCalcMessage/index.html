@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="calc" action="#" method="POST">
+        <label for="firstNumber">Введите первое число</label>
+        <input type="text" id="firstNumber" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+        <label for=" secondNumber">Введите второе число</label>
+        <input type="text" id="secondNumber" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
+        <button onclick="getSum()">Сумма чисел равна</button>
+        <input type="text" id="sum">
+        <button onclick="getDifference()">Разность чисел равна</button>
+        <input type="text" id="difference">
+        <button onclick="getWork()">Произведение чисел равно</button>
+        <input type="text" id="work">
+        <button onclick="getPrivate()">Частное чисел равно</button>
+        <input type="text" id="private">
+    </form>
+</body>
+
+</html>
