@@ -21,7 +21,13 @@ function getWork(){
     }
 
 function getPrivate(){
+
     let num1 = Number( document.getElementById('firstNumber').value );
     let num2 = Number( document.getElementById('secondNumber').value );
+
+    if (num2=='0'){
+        alert('На ноль делить нельзя!');
+    }
+
     document.getElementById('private').value = num1 / num2;
     }
