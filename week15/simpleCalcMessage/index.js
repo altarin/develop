@@ -1,33 +1,27 @@
-var a = document.getElementById('firstNumber').value;
-var b = document.getElementById('secondNumber').value;
-
-function getSum(a,b) {
-    
-    // let num1 = Number( document.getElementById('firstNumber').value );
-    // let num2 = Number( document.getElementById('secondNumber').value );
-    document.getElementById('sum') = a + b;
+var operator; 
+function calc() {
+    var result;
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (num2=='0') {
+            result = 'На ноль делить нельзя!';
+        } else {
+            result = num1 / num2;
+        }
+        break;
+    default:
+        result = 'выберите операцию';
     }
-
-function getDifference(){
-    let num1 = Number( document.getElementById('firstNumber').value );
-    let num2 = Number( document.getElementById('secondNumber').value );
-    document.getElementById('difference').value = num1 - num2;
-    }
-
-function getWork(){
-    let num1 = Number( document.getElementById('firstNumber').value );
-    let num2 = Number( document.getElementById('secondNumber').value );
-    document.getElementById('work').value = num1 * num2;
-    }
-
-function getPrivate(){
-
-    let num1 = Number( document.getElementById('firstNumber').value );
-    let num2 = Number( document.getElementById('secondNumber').value );
-
-    if (num2=='0'){
-        alert('На ноль делить нельзя!');
-    }
-
-    document.getElementById('private').value = num1 / num2;
-    }
+    document.getElementById("result").innerHTML = result;
+}

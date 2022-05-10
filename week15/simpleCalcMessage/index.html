@@ -11,21 +11,25 @@
 </head>
 
 <body>
+    <form name="calc" action="#" method="POST">
+        <div class="calc">
+            <label>Введите первое число</label>
+            <input id="num1" class="window_number" />
 
-    <!-- <form name="calc" action="#" method="POST"> -->
-    <label for="firstNumber">Введите первое число</label>
-    <input type="text" id="firstNumber" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
-    <label for=" secondNumber">Введите второе число</label>
-    <input type="text" id="secondNumber" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
-    <button onclick="getSum()">Сумма чисел равна</button>
-    <input type="text" id="sum">
-    <button onclick="getDifference()">Разность чисел равна</button>
-    <input type="text" id="difference">
-    <button onclick="getWork()">Произведение чисел равно</button>
-    <input type="text" id="work">
-    <button onclick="getPrivate()">Частное чисел равно</button>
-    <input type="text" id="private">
-    <!-- </form> -->
+            <div class="actions">
+                <button id="sum" class="operator" onclick="operator='+'">+</button>
+                <button id="difference" class="operator" onclick="operator='-'">-</button>
+                <button id="work" class="operator" onclick="operator='*'">x</button>
+                <button id="private" class="operator" onclick="operator='/'">/</button>
+            </div>
+
+            <label>Введите второе число</label>
+            <input id="num2" class="window_number" /><br />
+
+            <button onclick="calc()">=</button>
+            <p id="result"></p>
+    </form>
+    </div>
 </body>
 
 </html>
