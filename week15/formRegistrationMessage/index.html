@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Регистрация</h1>
+        <span>Главная</span>
+        <span>*</span>
+        <span>Регистрация</span>
+    </header>
+    <div class="form_registration">
+        <h2>Личные данные</h2>
+        <div class="form_data">
+            <input type="text" name="firstname" required="" value="" placeholder="Имя, Фамилия *" id="input-firstname">
+        </div>
+        <div class="form_data">
+            <input type="tel" name="telephone" required="" value="" placeholder="Телефон *" id="input-telephone"
+                class="phone-input" im-insert="true">
+        </div>
+        <div class="form_data">
+            <input type="email" name="email" required="" value="" placeholder="E-mail *" id="input-email">
+        </div>
+        <div class="form_data">
+            <input type="birthday" name="birthday" required="" value="" placeholder="Дата рождения *"
+                id="input-birthday">
+        </div>
+        <h2>Придумайте пароль</h2>
+        <div class="form_data">
+            <input type="password" name="password" required="" value="" placeholder="Пароль *" id="input-password"
+                class="form-control" aria-autocomplete="list">
+        </div>
+        <div class="form_data">
+            <input type="password" name="confirm" required="" value="" placeholder="Повторите пароль *"
+                id="input-confirm" class="form-control">
+        </div>
+        <h2>Адрес</h2>
+        <div class="form_data">
+            <input type="text" name="city" value="" placeholder="Город">
+        </div>
+        <div class="form_data">
+            <input type="text" name="street" value="" placeholder="Улица">
+        </div>
+        <div class="form_data">
+            <input type="text" name="house" value="" placeholder="Дом">
+        </div>
+        <div class="form_data">
+            <input type="text" name="apart" value="" placeholder="Квартира">
+        </div>
+        <div class="form_agreement">
+            <label class="accept checkbox">
+                <input type="checkbox" name="accept" checked="" value="yes">
+                <p>Согласен с политикой обработки <a href="/politika-konfidentsialnosti" target="_blank">персональных
+                        данных</a></p>
+            </label>
+        </div>
+        <div class="form-btn">
+            <input type="submit" value="Зарегистрироваться" class="button button_reg">
+        </div>
+    </div>
+</body>
+
+</html>
