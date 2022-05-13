@@ -26,9 +26,10 @@ h2{
     padding: 0 1.3em;
     margin-bottom: 20px;
 }
-.accept_checkbox{
+.form_agreement .accept_checkbox{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 .account .button_reg {
     font-size: 1.1em;
@@ -51,4 +52,7 @@ h2{
     background-color: #ff8429;
     height: 3em;
     line-height: 2em;
+}
+#errorMessage {
+    color:red;
 }

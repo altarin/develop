@@ -33,6 +33,8 @@
             <input type="birthday" name="birthday" required="" value="" placeholder="Дата рождения *"
                 id="input-birthday">
         </div>
+
+
         <h2>Придумайте пароль</h2>
         <div class="form_data">
             <input type="password" name="password" required="" value="" placeholder="Пароль *" id="input-password"
@@ -42,28 +44,33 @@
             <input type="password" name="confirm" required="" value="" placeholder="Повторите пароль *"
                 id="input-confirm" class="form-control">
         </div>
+
+
         <h2>Адрес</h2>
         <div class="form_data">
-            <input type="text" name="city" value="" placeholder="Город">
+            <input type="text" name="city" value="" placeholder="Город" id="input-city">
         </div>
         <div class="form_data">
-            <input type="text" name="street" value="" placeholder="Улица">
+            <input type="text" name="street" value="" placeholder="Улица" id="input-street">
         </div>
         <div class="form_data">
-            <input type="text" name="house" value="" placeholder="Дом">
+            <input type="text" name="house" value="" placeholder="Дом" id="input-house">
         </div>
         <div class="form_data">
-            <input type="text" name="apart" value="" placeholder="Квартира">
+            <input type="text" name="apart" value="" placeholder="Квартира" id="input-apart">
         </div>
         <div class="form_agreement">
-            <label class="accept checkbox">
+            <lanel class="accept_checkbox">
                 <input type="checkbox" name="accept" checked="" value="yes">
-                <p>Согласен с политикой обработки <a href="/politika-konfidentsialnosti" target="_blank">персональных
+                <p>Согласен с политикой обработки <a href="/politika-konfidentsialnosti">персональных
                         данных</a></p>
-            </label>
+            </lanel>
         </div>
+
+        <div id="errorMessage"></div>
+
         <div class="form-btn">
-            <input type="submit" value="Зарегистрироваться" class="button button_reg">
+            <input type="submit" onclick="check()" value="Зарегистрироваться" class="button button_reg">
         </div>
     </div>
 </body>
