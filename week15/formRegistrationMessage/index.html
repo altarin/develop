@@ -20,29 +20,26 @@
     <div class="form_registration">
         <h2>Личные данные</h2>
         <div class="form_data">
-            <input type="text" name="firstname" required="" value="" placeholder="Имя, Фамилия *" id="input-firstname">
+            <input type="text" name="firstname" value="" placeholder="Имя, Фамилия" id="input-firstname">
         </div>
         <div class="form_data">
-            <input type="tel" name="telephone" required="" value="" placeholder="Телефон *" id="input-telephone"
-                class="phone-input" im-insert="true">
+            <input type="tel" name="telephone" value="" placeholder="Телефон" id="input-telephone" class="phone-input"
+                im-insert="true" onkeyup="this.value = this.value.replace (/\D/, '')">
         </div>
         <div class="form_data">
-            <input type="email" name="email" required="" value="" placeholder="E-mail *" id="input-email">
+            <input type="email" name="email" value="" placeholder="E-mail" id="input-email">
         </div>
         <div class="form_data">
-            <input type="birthday" name="birthday" required="" value="" placeholder="Дата рождения *"
-                id="input-birthday">
+            <input type="birthday" name="birthday" value="" placeholder="Дата рождения" id="input-birthday">
         </div>
 
 
         <h2>Придумайте пароль</h2>
         <div class="form_data">
-            <input type="password" name="password" required="" value="" placeholder="Пароль *" id="input-password"
-                class="form-control" aria-autocomplete="list">
+            <input type="password" name="password" value="" placeholder="Пароль" id="input-password">
         </div>
         <div class="form_data">
-            <input type="password" name="confirm" required="" value="" placeholder="Повторите пароль *"
-                id="input-confirm" class="form-control">
+            <input type="password" name="confirm" value="" placeholder="Повторите пароль" id="input-confirm">
         </div>
 
 
@@ -59,9 +56,10 @@
         <div class="form_data">
             <input type="text" name="apart" value="" placeholder="Квартира" id="input-apart">
         </div>
+
         <div class="form_agreement">
             <lanel class="accept_checkbox">
-                <input type="checkbox" name="accept" checked="" value="yes">
+                <input type="checkbox" name="accept" id="checked">
                 <p>Согласен с политикой обработки <a href="/politika-konfidentsialnosti">персональных
                         данных</a></p>
             </lanel>

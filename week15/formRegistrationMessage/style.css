@@ -43,11 +43,8 @@ h2{
     border: 2px solid #fff;
     text-align: center;
     height: 2.8em;
-    line-height: 1.875em;
     padding: 0.3em 0.9em;
     border-radius: 20px;
-}
-.button_reg {
     color: #fff;
     background-color: #ff8429;
     height: 3em;
