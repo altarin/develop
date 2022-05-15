@@ -70,4 +70,8 @@ function check(){
     } else {
         document.getElementById('errorMessage').innerHTML += "Нет галочки Согласен с политикой обработки персональных данных";
     }
+
+    if ((fio.value !== '') && (phone.value !== '') && (email.value !== '') && (birthday.value !== '') && (password.value !== '') && (password_conf.value !== '') && (city.value !== '') && (street.value !== '') && (house.value !== '') && (apart.value !== '')){
+       alert("Добро пожаловать, " + fio.value + "!");
+    }
 }
