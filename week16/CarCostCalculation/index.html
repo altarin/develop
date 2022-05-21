@@ -12,29 +12,79 @@
 
 <body>
     <div class="car-cost-container">
-        <select name="brand" id="car-brand" class="choice">
-            <label>Выберите марку:</label>
-            <option value=""></option>
-            <option value="audi">Audi</option>
-            <option value="bmv">BMW</option>
-            <option value="ford">Ford</option>
-            <option value="mazda">Mazda</option>
-            <option value="nissan">Nissan</option>
-            <option value="opel">Opel</option>
-            <option value="toyota">Toyota</option>
+        <!-- марка автомобиля -->
+        <label class="title">Выберите марку:</label>
+        <select name="brand" id="car-brand" onchange="calc()" class="choice choice-window">
+            <option value="0"></option>
+            <option value="350000">Audi</option>
+            <option value="360000">BMW</option>
+            <option value="320000">Ford</option>
+            <option value="341000">Mazda</option>
+            <option value="300000">Nissan</option>
+            <option value="330000">Opel</option>
+            <option value="380000">Toyota</option>
         </select>
+        <!-- модель автомобиля -->
+        <label class="title">Выберите модель:</label>
+        <select name="model" onchange="calc()" id="car-model" class="choice choice-window">
+            <option value="0"></option>
+            <option value="140000">TT</option>
+            <option value="210000">X5</option>
+            <option value="100000">Focus</option>
+            <option value="320000">RX-8</option>
+            <option value="190000">Terrano</option>
+            <option value="120000">Vectra</option>
+            <option value="400000">RAV 4</option>
+        </select>
+        <!-- год выпуска -->
+        <label class="title">Год выпуска:</label>
+        <select name="year" id="car-year" onchange="calc()" class="choice choice-window">
+            <option value="0"></option>
+            <option value="20000">1998</option>
+            <option value="25000">2000</option>
+            <option value="30000">2004</option>
+            <option value="35000">2008</option>
+            <option value="40000">2012</option>
+            <option value="45000">2016</option>
+            <option value="50000">2020</option>
+        </select>
+        <!-- тип кузова -->
+        <label class="title">Тип кузова:</label>
+        <div class="choice">
+            <input type="checkbox" onchange="calc()" id="car-coupe" name="car-body" value="20000">
+            <label for="car-coupe" class="title-checkbox">Купе</label><br>
 
-        <select name="model" id="car-model" class="choice">
-            <label>Выберите модель:</label>
-            <option value=""></option>
-            <option value="audi">TT</option>
-            <option value="bmv">X5</option>
-            <option value="ford">Focus</option>
-            <option value="mazda">RX-8</option>
-            <option value="nissan">Terrano</option>
-            <option value="opel">Vectra</option>
-            <option value="toyota">RAV 4</option>
-        </select>
+            <input type="checkbox" onchange="calc()" id="car-sedan" name="car-body" value="23000">
+            <label for="car-sedan" class="title-checkbox">Седан</label><br>
+
+            <input type="checkbox" onchange="calc()" id="car-hatchback" name="car-body" value="30000">
+            <label for="car-hatchback" class="title-checkbox">Хэтчбэк</label>
+        </div>
+        <!-- тип КПП -->
+        <label class="title">Тип КПП:</label>
+        <div class="choice">
+            <input type="radio" onchange="calc()" id="car-type-mechanics" name="transmission" value="10000">
+            <label for="car-type-mechanics">Механика</label><br>
+
+            <input type="radio" onchange="calc()" id="car-type-automate" name="transmission" value="15000">
+            <label for="car-type-automate">Автомат</label>
+        </div>
+        <!-- тип двигателя -->
+        <label class="title">Тип двигателя:</label>
+        <div class="choice">
+            <input type="radio" onchange="calc()" id="car-type-benz" name="engine" value="15000">
+            <label for="car-type-benz">Бензиновый</label><br>
+
+            <input type="radio" onchange="calc()" id="car-type-diesel" name="engine" value="10000">
+            <label for="car-type-diesel">Дизельный</label>
+        </div>
+        <!-- пробег автомобиля -->
+        <!-- <label class="title">Пробег, км:</label>
+        <input type="text" class="choice choice-window"> -->
+
+        <!-- <input class="submit-calc" type="submit" value="Рассчитать"> -->
+        <span>Итоговая цена:</span>
+        <div id="total"></div>
     </div>
 </body>
 
