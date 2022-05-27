@@ -1,0 +1,16 @@
+.submit-random{
+    width: 150px;
+    height: 50px;
+    background-color: #009688;
+}
+.form-random{
+    display: flex;
+    flex-direction: column;
+}
+.items{
+    display: flex;
+}
+.items span{
+    font-size: 18px;
+    color: #009688;
+}
