@@ -1,0 +1,13 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 500px;
+    padding: 20px;
+}
+.form input{
+    height: 30px;
+}
+.form input:not(:last-child) {
+    margin-bottom: 15px;
+}
