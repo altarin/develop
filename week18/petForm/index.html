@@ -21,7 +21,20 @@
         }
 
         input:invalid {
-            background-color: beige;
+            background-color: #F8E0EC;
+        }
+
+        .example {
+            font-size: 14px;
+        }
+
+        .button {
+            width: 150px;
+            height: 40px;
+            font-size: 18px;
+            background-color: #81b2f7;
+            border-radius: 5px;
+            border: none;
         }
     </style>
 </head>
@@ -32,18 +45,18 @@
         <form enctype="multipart/form-data" method="post">
             <div class="question">
                 <label for="name_pet"><b>1) Кличка питомца:*</b></label>
-                <input type="text" name="name_pet" id="name_pet" required />
+                <input type="text" name="name_pet" id="name_pet" pattern="^[а-яА-ЯеЁa-zA-Z]+$" required />
             </div>
             <div class="question">
                 <fieldset>
                     <legend><b>2) Информация о владельце</b></legend>
                     <label for="name">Имя:*</label>
-                    <input type="text" name="name" id="name" required><br />
+                    <input type="text" name="name" id="name" pattern="^[а-яА-ЯеЁa-zA-Z]+$" required><br />
                     <label for="phone">Телефон:*</label>
-                    <input type="text" name="phone" id="phone" placeholder="+7-999-999-9999"
-                        pattern="\+\d-\d{3}-\d{3}-\d{4}" required><br />
+                    <input type="text" name="phone" id="phone" pattern="\+\d-\d{3}-\d{3}-\d{4}" required><br />
+                    <span class="example">Телефон в формате: +7-ХХХ-ХХХ-ХХХХ</span><br>
                     <label for="email">e-mail:</label>
-                    <input type="text" name="email" id="email">
+                    <input type="email" name="email" id="email">
                 </fieldset><br />
             </div>
 
@@ -74,13 +87,13 @@
             </div>
             <div class="question">
                 <p><b>6) Комментарий владельца:</b></p>
-                <textarea rows="7" cols="40"></textarea>
+                <textarea rows="7" cols="40" maxlength="24"></textarea>
             </div>
             <div class="question">
                 <p><b>7) Приложить фото питомца:</b></p>
                 <input type="file" name="photo" multiple accept="image/*,image/jpeg" />
             </div>
-            <p><input type="submit" value="Сохранить"></p>
+            <p><input type="submit" class="button" value="Сохранить"></p>
         </form>
     </div>
 </body>
