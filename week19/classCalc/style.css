@@ -1,0 +1,38 @@
+.calc{
+    border: 1px solid blue;
+    width: 240px;
+    height: 300px;
+    padding: 20px;
+}
+.window_number{
+    border: 1px solid blue;
+    width: 40px;
+    height: 40px;
+}
+input:nth-of-type(1){
+    margin-bottom: 20px;
+}
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(126, 80, 187);
+    color: #fff;
+    margin-bottom: 20px;;
+}
+label{
+    font-size: 20px;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+}
+#result {
+    height: 40px;
+    border: 1px solid blue;
+}
+#calcul {
+    
+}
