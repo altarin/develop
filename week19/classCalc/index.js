@@ -1,3 +1,26 @@
+class Calculator {
+    // constructor(number) {
+    //     this.number = number;
+    // }
+
+    static amount(first, second){
+        return first + second;
+    }
+    // static subtraction(){
+    //     return this.firstNum - this.secondNum;
+    // }
+    // static multiplication(){
+    //     return this.firstNum * this.secondNum;
+    // }
+    // static quotient(){
+    //     return this.firstNum / this.secondNum;
+    // }
+}
+let calculator = new Calculator('5', '7');
+console.log(Calculator.amount());
+
+
+
 // var operator; 
 // function calc() {
 //     var result;
@@ -25,30 +48,4 @@
 //     }
 //     document.getElementById("result").innerHTML = result;
 // }
-
-class Calculator {
-    constructor(a, b) {
-        this.a = a;
-        this.b = b;
-    }
-
-    static amount(numeric){
-        return (numeric.a + numeric.b);
-    }
-    // static subtraction(){
-    //     return this.firstNum - this.secondNum;
-    // }
-    // static multiplication(){
-    //     return this.firstNum * this.secondNum;
-    // }
-    // static quotient(){
-    //     return this.firstNum / this.secondNum;
-    // }
-
-
-}
-let calculator = new Calculator('5', '7');
-console.log(Calculator.amount());
-
-
 
