@@ -27,12 +27,13 @@
 // }
 
 class Calculator {
-    constructor(number) {
-        this.number = number;
+    constructor(a, b) {
+        this.a = a;
+        this.b = b;
     }
 
-    static amount(first, second){
-        return first.number + second.number;
+    static amount(numeric){
+        return (numeric.a + numeric.b);
     }
     // static subtraction(){
     //     return this.firstNum - this.secondNum;
@@ -48,3 +49,6 @@ class Calculator {
 }
 let calculator = new Calculator('5', '7');
 console.log(Calculator.amount());
+
+
+
