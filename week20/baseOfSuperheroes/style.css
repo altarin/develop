@@ -1,7 +1,8 @@
 .hero{
-    width: 400px;
-    height: 125px;
     background-color: darkseagreen;
     border-radius: 5px;
     padding-left: 5px;
+}
+#container {
+    display: inline-table;
 }
