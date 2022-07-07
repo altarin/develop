@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Регистрация</h1>
+        <span>Главная</span>
+        <span>*</span>
+        <span>Регистрация</span>
+    </header>
+    <form novalidate>
+        <div class="form_registration">
+            <h2>Личные данные</h2>
+            <div class="form_data">
+                <input type="text" name="firstname" value="" placeholder="Имя, Фамилия" id="input-firstname" required>
+            </div>
+            <div class="form_data">
+                <input type="tel" name="telephone" value="" placeholder="Телефон" id="input-telephone"
+                    class="phone-input" im-insert="true" onkeyup="this.value = this.value.replace (/\D/, '')" required>
+            </div>
+            <div class="form_data">
+                <input type="email" name="email" value="" placeholder="E-mail" id="input-email">
+            </div>
+            <div class="form_data">
+                <input type="birthday" name="birthday" value="" placeholder="Дата рождения" id="input-birthday">
+            </div>
+
+            <h2>Придумайте пароль</h2>
+            <div class="form_data">
+                <input type="password" name="password" value="" placeholder="Пароль" id="input-password" required>
+            </div>
+            <div class="form_data">
+                <input type="password" name="confirm" value="" placeholder="Повторите пароль" id="input-confirm"
+                    required>
+            </div>
+
+            <div class="form-btn">
+                <button type="submit" class="button button_reg">Зарегистрироваться</button>
+            </div>
+
+            <div id="errorMessage"></div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
