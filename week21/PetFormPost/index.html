@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница-опросник</title>
+    <link rel="shortcut icon"
+        href="https://cdn-icons.flaticon.com/png/512/3529/premium/3529398.png?token=exp=1643142308~hmac=d80321046be721cc1849ddf83d3b1378"
+        type="image/png">
+    <style>
+        .container {
+            width: 565px;
+            margin: 0 auto;
+            font-size: 24px;
+        }
+
+        .question {
+            margin-top: 20px;
+        }
+
+        input:invalid {
+            background-color: #F8E0EC;
+        }
+
+        .example {
+            font-size: 14px;
+        }
+
+        .button {
+            width: 150px;
+            height: 40px;
+            font-size: 18px;
+            background-color: #81b2f7;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="catmeow.png" alt="cat">
+        <form id="formElem">
+            <div class="question">
+                <label for="name_pet"><b>1) Кличка питомца:*</b></label>
+                <input type="text" name="name_pet" id="name_pet" pattern="^[а-яА-ЯеЁa-zA-Z]+$" required />
+            </div>
+            <div class="question">
+                <fieldset>
+                    <legend><b>2) Информация о владельце</b></legend>
+                    <label for="name">Имя:*</label>
+                    <input type="text" name="name" id="name" pattern="^[а-яА-ЯеЁa-zA-Z]+$" required><br />
+                    <label for="phone">Телефон:*</label>
+                    <input type="text" name="phone" id="phone" pattern="\+\d-\d{3}-\d{3}-\d{4}" required><br />
+                    <span class="example">Телефон в формате: +7-ХХХ-ХХХ-ХХХХ</span><br>
+                    <label for="email">e-mail:</label>
+                    <input type="email" name="email" id="email">
+                </fieldset><br />
+            </div>
+
+            <div class="question">
+                <label for="breed"><b>3) Порода питомца</b></label>
+                <select id="breed">
+                    <option value="brit">Британская короткошерстная</option>
+                    <option value="bengal">Бенгальская кошка</option>
+                    <option value="siam">Сиамская кошка</option>
+                    <option value="meinkun">Мейн-кун</option>
+                    <option value="egip">Египетская Мау</option>
+                    <option value="rus">Русская голубая кошка</option>
+                    <option value="other">Другая</option>
+                </select>
+            </div>
+            <div class="question">
+                <fieldset>
+                    <legend><b>4) Чем питается</b></legend>
+                    <input type="checkbox" value="1" />Сухой корм<br />
+                    <input type="checkbox" value="2" />Влажный корм<br />
+                    <input type="checkbox" value="3" />Натуральный корм<br />
+                </fieldset>
+            </div>
+            <div class="question">
+                <label><b>5) Пол</b></label> <br />
+                <input type="radio" name="sex" value="m" /> Самец<br />
+                <input type="radio" name="sex" value="f" /> Самка <br />
+            </div>
+            <div class="question">
+                <p><b>6) Комментарий владельца:</b></p>
+                <textarea rows="7" cols="40" maxlength="24"></textarea>
+            </div>
+            <div class="question">
+                <p><b>7) Приложить фото питомца:</b></p>
+                <input type="file" name="photo" multiple accept="image/*,image/jpeg" />
+            </div>
+            <p><input type="submit" id="postButton" class="button" value="Отправить"></p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
